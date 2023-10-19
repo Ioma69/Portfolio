@@ -1,35 +1,58 @@
 body {
     min-height: 100vh;
-    min-width: 100vw;
     font-family: 'Audiowide', cursive;
 }
 
-
+main {
+    min-height: 100%;
+}
 :root {
     --red: #ff0000;
+    --bluenight: rgba(2, 8, 92, 0.884);
   }
 
+
+.bg {
+    background-image: url('images/moon.svg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+}
+
+.sectionHeight {
+    height: 500px;
+   
+}
 
 span {
     color: var(--red);
 }
 
 
+.logo {
+    height: 100px;
+    
+}
+.container{
 
-.container {
-
-
-    position: absolute;
-    left: 50%;
-    top: 30%;
+    margin-top: 200px;
+    margin-bottom: 175px;
     padding: 20px 50px;
-    transform: translate(-50%, -50%) skewY(-2deg);
+    transform: skewY(-2deg);
     border-radius: 20px;
     box-shadow: 0 0 10px var(--red), 0 0 30px var(--red), inset 0 0 10px var(--red), inset 0 0 30px var(--red);
     border: 8px solid #fff;
     animation: animate .7s alternate-reverse infinite;
     width: 50%;
     font-family: 'Audiowide', cursive;
+}
+
+.wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
 }
 
 
@@ -43,7 +66,7 @@ h1,h2 {
 }
 
 h1 span, h2 span {
-    animation: animate .5s linear infinite;
+    animation: animate 1s linear infinite;
 }
 
 h1 span,h2 span:nth-child(1) {
