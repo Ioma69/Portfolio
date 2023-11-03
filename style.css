@@ -78,6 +78,8 @@ span {
     animation: animate2 8s linear infinite;
 }
 
+
+
 .box::after {
     background: linear-gradient(315deg, #6f00ff, #e91e63);
     animation-delay: -2s;
@@ -184,6 +186,7 @@ h1,h2 {
     letter-spacing: 7px;
 }
 
+
 h1 span, h2 span {
     animation: animate 1s linear infinite;
 }
@@ -247,4 +250,41 @@ h1 span, h2 span:nth-child(12) {
     opacity: 1;
 }
 
+}
+
+h3 + ul > li {
+    position: relative;
+    border: 2px solid var(--red);
+    padding: 10px 30px;
+    z-index: 1;
+    overflow: hidden;
+    transition: 1s;
+}
+
+h3 + ul > li:hover {
+    color: #fff;
+    box-shadow: 
+    0 0 10px var(--red),
+    0 0 20px var(--red),
+    0 0 40px var(--red),
+    0 0 80px var(--red),
+    0 0 160px var(--red);
+}
+
+h3 + ul > li::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--red);
+    transform: skew(0deg);
+    z-index: -1;
+    transition: 1s;
+}
+
+h3 + ul > li:hover::before {
+    width: 100%;
+    
 }
