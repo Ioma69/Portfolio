@@ -184,7 +184,7 @@
                 <div class="w-100 MarginForm">
                   <div class="row singleForm">
                     <div class="col-12 d-flex align-items-center backgroundColor heightForm">
-                      <form name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true" netlify-honeypot="bot-field" id="contact-form" class="w-100 formFont">
+                      <form name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true" netlify-honeypot="bot-field" id="contact-form" class="w-100 formFont" netlify >
                         <div style="display: none;">
                           <label>Ne pas remplir si vous êtes humain : <input name="bot-field" /></label>
                         </div>
@@ -193,16 +193,16 @@
                         </div>
                         <div class="form-group marginBottomForm text-white">
                           <label for="name">Nom</label>
-                          <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Votre nom">
+                          <input type="text" class="form-control mt-2" id="name" aria-describedby="emailHelp" placeholder="Votre nom">
                           <div id="emailHelp" class="form-text"></div>
                         </div>
-                        <div class="form-group marginTopForm text-white">
+                        <div class="form-group marginTopForm text-white mt-2">
                           <label for="mail">E-mail</label>
-                          <input type="email" class="form-control" id="mail" placeholder="Votre E-mail">
+                          <input type="email" class="form-control mt-2" id="mail" placeholder="Votre E-mail">
                         </div>
-                        <div class="form-group marginTopForm text-white">
+                        <div class="form-group marginTopForm text-white mt-2">
                           <label for="message">Message</label>
-                          <textarea class="form-control" id="message" placeholder="Votre message"></textarea>
+                          <textarea class="form-control mt-2" id="message" placeholder="Votre message"></textarea>
                         </div>
                         <div class="d-flex justify-content-center pt-3" data-netlify-recaptcha="true"></div>
                         <input type="hidden" name="form-name" value="contact">
