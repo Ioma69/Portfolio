@@ -178,6 +178,42 @@
                 </ul>
 
             </section>
+
+            <section class="w-100 h-100 text-center d-flex flex-column justify-content-center align-items-center">
+              <div class="d-flex">
+                <div class="w-100 MarginForm">
+                  <div class="row singleForm">
+                    <div class="col-12 d-flex align-items-center backgroundColor heightForm">
+                      <form name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true" netlify-honeypot="bot-field" id="contact-form" class="w-100 formFont">
+                        <div style="display: none;">
+                          <label>Ne pas remplir si vous êtes humain : <input name="bot-field" /></label>
+                        </div>
+                        <div>
+                          <p class="marginBottomContact fs-1 text-white">Contactez-moi</p>
+                        </div>
+                        <div class="form-group marginBottomForm text-white">
+                          <label for="name">Nom</label>
+                          <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Votre nom">
+                          <div id="emailHelp" class="form-text"></div>
+                        </div>
+                        <div class="form-group marginTopForm text-white">
+                          <label for="mail">E-mail</label>
+                          <input type="email" class="form-control" id="mail" placeholder="Votre E-mail">
+                        </div>
+                        <div class="form-group marginTopForm text-white">
+                          <label for="message">Message</label>
+                          <textarea class="form-control" id="message" placeholder="Votre message"></textarea>
+                        </div>
+                        <div class="d-flex justify-content-center pt-3" data-netlify-recaptcha="true"></div>
+                        <input type="hidden" name="form-name" value="contact">
+          
+                        <button type="submit" class="btn btn-secondary mt-3">Envoyer</button>
+                      </form>
+                    </div> 
+                  </div>
+                </div>
+              </div>
+            </section>
         </main> 
         <script src="script.js"></script>
 </body>
