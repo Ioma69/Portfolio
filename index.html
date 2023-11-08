@@ -12,35 +12,32 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Bruno+Ace+SC&family=Faster+One&family=Monoton&family=Pixelify+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body class="bg">
     <header>
       <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-        <a class="navbar-brand ms-5 z-0" href="index.html"> <img class="logo" src="images/logo.svg" alt="Logo"/></a>
-        <button class="navbar-toggler me-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand ms-5 z-0 d-flex" href="index.html"> <img class="logo d-lg-block" src="images/logo.svg" alt="Logo"/></a>
+        <button class="navbar-toggler me-5 bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse d-lg-flex justify-content-lg-center" id="navbarNavDropdown">
           <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link text-white" href="#">Home <span class="sr-only">(current)</span></a>
+            <li class="nav-item active d-flex align-items-center">
+              <a class="nav-link text-white ms-5 ms-lg-0" href="#">Home<span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#">Features</a>
+            <li class="nav-item d-flex align-items-center">
+              <a class="nav-link text-white ms-5 ms-lg-0" href="#">Features</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#">Pricing</a>
+            <li class="nav-item d-flex align-items-center">
+              <a class="nav-link text-white ms-5 ms-lg-0" href="#">Pricing</a>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown link
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="www.google.com">Action</a>
-                <a class="dropdown-item" href="www.google.com">Another action</a>
-                <a class="dropdown-item" href="www.google.com">Something else here</a>
-              </div>
+            <li class="nav-item d-flex align-items-center">
+              <a class="nav-link text-white ms-5 ms-lg-0" href="https://linkedin.com"><i class="fa-brands fa-2x fa-linkedin"></i></a>
+            </li>
+            <li class="nav-item d-flex align-items-center">
+              <a class="nav-link text-white ms-5 ms-lg-0" href="https://Github.com"><i class="fa-brands fa-2x fa-github"></i></a>
             </li>
           </ul>
         </div>
@@ -189,27 +186,27 @@
                           <label>Ne pas remplir si vous êtes humain : <input name="bot-field" /></label>
                         </div>
                         <div>
-                          <p class="marginBottomContact fs-1 text-white">Contactez-moi</p>
+                          <h3 class="marginBottomContact mb-5 text-white mt-5">Contactez-moi</h3>
                         </div>
                         <div class="form-group marginBottomForm text-white">
                           <label for="name">Nom</label>
                           <input type="text" class="form-control mt-2" id="name" aria-describedby="emailHelp" placeholder="Votre nom">
-                          <div id="name-error" class="error-message"></div><!-- Message d'erreur pour le nom -->
+                          <div id="name-error" class="error-message"></div>
                         </div>
                         <div class="form-group marginTopForm text-white mt-2">
                           <label for="mail">E-mail</label>
                           <input type="email" class="form-control mt-2" id="mail" placeholder="Votre E-mail">
-                          <div id="email-error" class="error-message"></div><!-- Message d'erreur pour l'e-mail -->
+                          <div id="email-error" class="error-message"></div>
                         </div>
                         <div class="form-group marginTopForm text-white mt-2">
                           <label for="message">Message</label>
                           <textarea class="form-control mt-2" id="message" placeholder="Votre message"></textarea>
-                          <div id="message-error" class="error-message"></div><!-- Message d'erreur pour le message -->
+                          <div id="message-error" class="error-message"></div>
                         </div>
                         <div class="d-flex justify-content-center pt-3" data-netlify-recaptcha="true"></div>
                         <input type="hidden" name="form-name" value="contact">
                       
-                        <button type="submit" class="btn btn-secondary mt-3">Envoyer</button>
+                        <button type="submit" class="btn btn-secondary mt-4 mb-5">Envoyer</button>
                       </form>
                       
                     </div> 
@@ -217,6 +214,12 @@
                 </div>
               </div>
             </section>
+            <footer>
+              <div class="wrapper mt-5">
+                <p class="text-white">© 2023 RAQUIN Sariel. Tous droits réservés.</p>
+              </div>
+            </footer>
+            
         </main> 
         <script src="security.js"></script>
 </body>

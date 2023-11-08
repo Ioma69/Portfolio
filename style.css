@@ -56,6 +56,10 @@ span {
     gap: 50px;
 }
 
+.nav-link {
+    text-shadow: 2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, -2px 0 0 black, 2px 2px 0 black, 2px -2px 0 black, -2px 2px 0 black, -2px -2px 0 black;
+    
+}
 .box {
     position: relative;
     width: 400px;
