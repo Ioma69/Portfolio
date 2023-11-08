@@ -70,6 +70,6 @@ document.getElementById('contact-form').addEventListener('submit', function (eve
     return nameRegex.test(name);
   }
   function isValidmessage(message) {
-    let messageRegex = /^[\w\s.,!?'"()/-]{1,350}$/;
+    let messageRegex = /^[\p{L}\p{N}\s.,!?'"()-À-ÖÙ-öÞß-ÿ\P{S}]{1,350}$/;
     return messageRegex.test(message);
   }
