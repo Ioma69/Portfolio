@@ -50,7 +50,7 @@ document.getElementById('contact-form').addEventListener('submit', function (eve
         valid = false;
       }
       else if (!isValidmessage(message)) {
-        document.getElementById('message-error').textContent = "Veuillez entrer un message composée de lettres, de chiffres, d'espaces et éventuellement de caractères spéciaux ";
+        document.getElementById('message-error').textContent = "Veuillez entrer un message composée de lettres, de chiffres, d'espaces sans caractères spéciaux.";
         valid = false;
     }
 
