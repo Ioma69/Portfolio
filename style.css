@@ -33,18 +33,21 @@ span {
     height: 100px;
     
 }
-.container{
+
+
+.container {
 
     margin-top: 200px;
     margin-bottom: 175px;
     padding: 20px 50px;
-    transform: skewY(-2deg);
+    transform: skewY(-1deg);
     border-radius: 20px;
     box-shadow: 0 0 10px var(--red), 0 0 30px var(--red), inset 0 0 10px var(--red), inset 0 0 30px var(--red);
-    border: 8px solid #fff;
+    border: 7px solid #fff;
     animation: animate .7s alternate-reverse infinite;
-    width: 50%;
-    font-family: 'Audiowide', cursive;
+    width: 45%;
+    font-family: 'audiowide', cursive;
+    
 }
 
 .wrapper {
@@ -289,6 +292,63 @@ h3 + ul > li::before {
 }
 
 h3 + ul > li:hover::before {
-    width: 100%;
-    
+    width: 100%;   
 }
+
+
+::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #fff; 
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #333; 
+    border-radius: 6px; 
+  }
+  
+
+  ::-webkit-scrollbar-button {
+    background: #fff; 
+  }
+
+  ::-webkit-scrollbar-track-piece:start {
+    background: #fff; 
+  }
+  
+  ::-webkit-scrollbar-track-piece:end {
+    background: #fff; 
+  }
+  
+  .customMenu{
+    position: relative;
+  }
+
+  .customMenu:before, .customMenu:after { 
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 0;
+    background-color: var(--red);
+    transition: 0.5s;
+  }
+  .customMenu:after {
+    left: 0;
+    bottom: -10px;
+  }
+  .customMenu:before {
+    right: 0;
+    top: -10px;
+  }
+  .customMenu:hover {
+    color: white;
+
+  }
+  .customMenu:hover:after,
+  .customMenu:hover:before{
+    width: 100%;
+  }
+
+  
