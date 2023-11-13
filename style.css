@@ -35,7 +35,7 @@ span {
 }
 
 
-.container {
+.neon {
 
     margin-top: 200px;
     margin-bottom: 175px;
@@ -45,10 +45,39 @@ span {
     box-shadow: 0 0 10px var(--red), 0 0 30px var(--red), inset 0 0 10px var(--red), inset 0 0 30px var(--red);
     border: 7px solid #fff;
     animation: animate .7s alternate-reverse infinite;
-    width: 45%;
+    width: 50%;
     font-family: 'audiowide', cursive;
     
 }
+
+@media screen and (max-width: 1420px) {
+   
+span {
+    font-size: 25px;
+}
+}
+
+@media screen and (max-width: 863px) {
+   .neon {width: 70%;}
+
+    span {
+        font-size: 20px;
+    }
+    }
+
+ @media screen and (max-width: 563px) {
+        .neon {width: 90%;}
+     
+ }
+     
+@media screen and (max-width: 433px) {
+        .neon {width: 100%;}
+         
+        span {
+            font-size: 16px;
+             }
+             }
+         
 
 .wrapper {
     position: relative;
@@ -65,8 +94,8 @@ span {
 }
 .box {
     position: relative;
-    width: 400px;
-    height: 500px;
+    width: 410px;
+    height: 450px;
     background: rgba(21, 5, 34, 0.87);
     overflow: hidden;
     display: flex;
@@ -174,7 +203,7 @@ span {
     border-radius: 25px;
     font-weight: 500;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.04em;
     text-decoration: none;
     transition: 0.5s;
 
